@@ -10,19 +10,30 @@
 | DRoI | 在 MMRotate 内置 RRoI 上做 FC 残差精调 | `use_droi` |
 
 ## 环境
-
-- Python 3.11 / PyTorch 2.5.1 + CUDA 12.1
-- MMCV 2.2.0（社区预编译） / MMEngine 0.10.7
-- MMDetection 3.0.0 / MMRotate 1.0.0rc1 / transformers 4.40.0
+- Python 3.7
+- PyTorch 1.7.0 + CUDA 10.1
+- MMCV-full 1.4.5+ (1.x版本)
+- MMDetection 2.22.0+
 
 ## 安装
-
 ```bash
-pip install torch==2.5.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cu121
-pip install --extra-index-url https://miropsota.github.io/torch_packages_builder mmcv==2.2.0+pt2.5.1cu121
-pip install mmengine==0.10.7 mmdet==3.0.0 transformers==4.40.0
-pip install mmrotate==1.0.0rc1
-```
+# 创建并激活虚拟环境
+conda create -n openmmlab python=3.7 -y
+conda activate openmmlab
+
+# 安装 PyTorch 1.7.0 和 CUDA 10.1
+conda install pytorch==1.7.0 torchvision==0.8.0 cudatoolkit=10.1 -c pytorch -y
+
+# 使用 MIM 安装 OpenMMLab 依赖
+pip install openmim
+mim install mmcv-full
+mim install mmdet
+
+# 安装 MMRotate
+git clone https://github.com/open-mmlab/mmrotate.git
+cd mmrotate
+pip install -r requirements/build.txt
+pip install -v -e .
 
 ## 版本断言绕过（必须）
 
