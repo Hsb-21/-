@@ -1,0 +1,8 @@
+torch==2.5.1
+torchvision==0.19.1
+mmengine==0.10.7
+mmdet==3.0.0
+mmrotate==1.0.0rc1
+transformers==4.40.0
+# mmcv 2.2.0 需通过以下命令安装：
+# pip install --extra-index-url https://miropsota.github.io/torch_packages_builder mmcv==2.2.0+pt2.5.1cu121

@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 数据与输出
+data/
+mmrotate/work_dirs/
+mmrotate/configs/roi_trans/_tmp_ablation_*.py
+
+# 本地环境
+envs/
+conda_pkgs/
+pip_cache/
+
+# 压缩包
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# IDE
+.vscode/
+.idea/
