@@ -1,9 +1,5 @@
 # Reproduction: Defect Object Detection for Industrial Scenarios
 
-针对论文《面向工业场景的缺陷目标检测研究》中旋转目标检测算法的复现。
-原论文的三个工业数据集（金属罐/幕墙/瓦楞纸箱）未公开，本仓库用 HRSC2016 替代。
-
-> 绝对值 mAP 不可与论文直接比较；有意义的是模块之间的相对提升趋势。
 
 ## 三个模块
 
