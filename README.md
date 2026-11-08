@@ -72,11 +72,6 @@ python ../scripts/run_ablation.py --epochs 12
 
 结果在 `mmrotate/work_dirs/ablation/results.json`。
 
-## 实现差异说明
-
-- **R-IoU** 是连续近似（IoU proxy + SmoothL1），不是论文的像素级精确实现。
-- **APS ③ 精细采样** 用 2x 上采样 + 深度可分离卷积 + 自适应池化近似论文采样网格。
-- **DRoI** 在 MMRotate 已有 RRoI 之后追加 FC 残差（零初始化），启用初期等价基线。
 
 ## License
 
