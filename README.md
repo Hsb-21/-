@@ -1,4 +1,4 @@
-# Reproduction: Defect Object Detection for Industrial Scenarios
+# Reproduction: Defect Object Detection for Industrial Scenarios 面向工业场景的缺陷目标检测研究
 
 
 ## 三个模块
